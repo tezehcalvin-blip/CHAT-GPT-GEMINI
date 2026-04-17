@@ -7,12 +7,12 @@ services:
   repo: https://github.com/tezehcalvin-blip/CHAT-GPT-GEMINI
   plan: free
   envVars:
-  - key: SESSION_ID
-    sync: false
-  - key: GEMINI_KEY
-    sync: false
-  - key: OPEN_AI_KEY
-    sync: false
+  - key: tct_6f6c8813
+    sync: true
+  - key: AQ.Ab8RN6KT1LJHk_HR4LefRkB4jxXHKF59n4QsTqpW5Vie-AZvRw
+    sync: true
+  - key: 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
+    sync: true
   region: virginia
   buildCommand: npm install
   startCommand: node npm start
