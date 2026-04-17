@@ -1,0 +1,19 @@
+# Exported from Render on 2026-04-16T23:59:12Z
+version: "1"
+services:
+- type: web
+  name: CHAT-GPT-GEMINI
+  runtime: node
+  repo: https://github.com/tezehcalvin-blip/CHAT-GPT-GEMINI
+  plan: free
+  envVars:
+  - key: SESSION_ID
+    sync: false
+  - key: GEMINI_KEY
+    sync: false
+  - key: OPEN_AI_KEY
+    sync: false
+  region: virginia
+  buildCommand: npm install
+  startCommand: node npm start
+  autoDeployTrigger: commit
